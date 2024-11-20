@@ -1,0 +1,3 @@
+[submodule "thirdparty/mae-lite"]
+	path = thirdparty/mae-lite
+	url = https://github.com/yberreby/MAE-Lite.git
