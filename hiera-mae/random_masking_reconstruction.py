@@ -27,13 +27,15 @@ def preprocess_image(image_path, processor, device):
 
 
 def reconstruct_image(inputs, outputs, processor, model, device):
+    pixel_values = inputs.pixel_values.squeeze(0) # bye batch
+    assert pixel_values.shape == (3, 224, 224)
+
     # torch.BoolTensor of shape (sequence_length)
     # Tensor indicating which patches are masked (0) and which are not (1).
     # THIS IS IMPORTANT
-    pixel_values = inputs.pixel_values.squeeze(0) # bye batch
-    assert pixel_values.shape == (3, 224, 224)
     bool_masked_pos = outputs.bool_masked_pos[0]
     assert len(bool_masked_pos.shape) == 1, "should be indices"
+
     logits = outputs.logits.squeeze(0) # bye batch
 
     # Model and image parameters
