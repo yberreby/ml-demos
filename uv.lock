@@ -455,6 +455,7 @@ source = { virtual = "." }
 dependencies = [
     { name = "ipython" },
     { name = "matplotlib" },
+    { name = "pillow-simd" },
     { name = "pyqt6" },
     { name = "torch" },
     { name = "transformers" },
@@ -464,6 +465,7 @@ dependencies = [
 requires-dist = [
     { name = "ipython", specifier = ">=8.29.0" },
     { name = "matplotlib", specifier = ">=3.9.2" },
+    { name = "pillow-simd", specifier = ">=9.5.0.post2" },
     { name = "pyqt6", specifier = ">=6.7.1" },
     { name = "torch", specifier = ">=2.5.1" },
     { name = "transformers", specifier = ">=4.46.3" },
@@ -733,6 +735,12 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/df/86/25dde85c06c89d7fc5db17940f07aae0a56ac69aa9ccb5eb0f09798862a8/pillow-11.0.0-cp313-cp313t-win_amd64.whl", hash = "sha256:5c39ed17edea3bc69c743a8dd3e9853b7509625c2462532e62baa0732163a904", size = 2572169 },
     { url = "https://files.pythonhosted.org/packages/51/85/9c33f2517add612e17f3381aee7c4072779130c634921a756c97bc29fb49/pillow-11.0.0-cp313-cp313t-win_arm64.whl", hash = "sha256:75acbbeb05b86bc53cbe7b7e6fe00fbcf82ad7c684b3ad82e3d711da9ba287d3", size = 2256828 },
 ]
+
+[[package]]
+name = "pillow-simd"
+version = "9.5.0.post2"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/d0/d9/5cf8d7c9ecaf389fe62570a5287036611f1328796ed6e59abbc2dc09f4a6/Pillow-SIMD-9.5.0.post2.tar.gz", hash = "sha256:39dfb027bdaa3e35597df9a1c42ea97091f32bc83f25ab9cab0845b3c4bad331", size = 904623 }
 
 [[package]]
 name = "prompt-toolkit"
