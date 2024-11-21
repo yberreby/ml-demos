@@ -9,6 +9,10 @@ Those were useful to me; I am releasing them in hopes that maybe they'll be usef
 **Absolutely no guarantees**. These are demos, not production code. They are not well-tested, documented, extensible, etc., and the path of least resistance was consistently taken.
 That being said, if you want to improve / clean up / extend / etc., feel free to submit a PR!
 
+## Implemented
+
+- Using masked autoencoders (MAE) to reconstruct images from partial views.
+
 ## Running the experiments
 
 Use `uv`:
